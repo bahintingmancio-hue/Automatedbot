@@ -1,0 +1,10 @@
+python-telegram-bot==21.10
+ccxt==4.2.25
+pandas
+numpy
+scikit-learn
+joblib
+python-dotenv
+apscheduler
+aiohttp
+matplotlib
