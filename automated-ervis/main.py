@@ -2,9 +2,14 @@ import asyncio
 import logging
 import pathlib
 import shutil
+import sys
 from datetime import datetime, timezone
 
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
+
+PROJECT_ROOT = pathlib.Path(__file__).resolve().parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
 from config import SETTINGS
 from core.ai_engine import AIEngine
